@@ -1,11 +1,15 @@
 # Progress Documentation
 
 @(Documentation)[Python|Ray tracing]
+
 In most cases of physics, when light hits a boundry of two light-transmittble medium. Both reflection and refraction will occur, the direction is determined by Reflection Law and Snell's Law. In this task, the process of light transmission is being simulated using python. The direction of reflected&transmitted light is calculated using Snell's Law.The whole transmission process is being illustrated. The polarisation and the amplitude of light is not being considered in this task, only the direction. 
 
 -------------------
 
 ## Illustration of light transmission
+
+![avatar](/Figure/Case_7.png)
+
 > (illustration of light transmission)fig1.1 (comment of all the angles and medium Index)
 
 ### The Law of reflection
@@ -13,9 +17,12 @@ As shown in the fig1.1. The angle of reflection is the same as the angle of inci
 
 ### The Snell's Law
 The relationship of the values between two angles is as follows:
+
 $$  n_1 \cdot \sin \theta _1 = n_2 \cdot \sin \theta _2 $$  
 
+
 In some cases, when light travels from a medium with a higher refractive index to one with a lower refractive index, the angle of the transmitted light could be 90 degree. In optical physics, the energy of transmission will be zero and only reflection will exsit. This phenomenon is named "Total Reflection". The critical angle is determined as follows:
+
 $$ \theta  = \sin ^{-1}\left ( \frac{n_2}{n_1}\right ) $$
 
 ## Simulation 
@@ -70,34 +77,6 @@ class Plane(object):
 
 ### 4.Calculate the intersection point of incident light and the surface
 
-#### Fun(CaRDir)
-If the incident light is **vertical or nearly vertical** to the plane, we take $\vec{r} = -\vec{i}$
-And for other cases we use the following formula to calculate: 
-$$ \vec{r} = \vec{i} - 2 * \left ( \vec{i} * \vec{n} \right ) *\vec{n} $$
-
-*There will be some deviation in the vertical case, but it will be a short time for calculation.*
-
-#### Fun(CaPoint)
-In the class of line, we have set a point $pl = [pl_0 ,pl_1 ,pl_2]$ which the light goes through, and also a direction $\vec{d} = [v_0 ,v_1 ,v_2]$, and then we can write the function of line: 
-$$ 
-f(x)=\left\{
-\begin{aligned}
-x & = & \ pl_0 + v_0 *t \\
-y & = & \ pl_1 + v_1 *t  \\
-z & = & \ pl_2 + v_2 *t 
-\end{aligned}
-\right.
-$$
-In the class of the plane, we already have a point $po = [pp_0 ,pp_1 ,pp_2]$ in the plane, and the normal vector  $\vec{n} = [n_0 ,n_1 ,n_2]$, we know all the vector in plane is vertical to the normal vector: $\vec{n} \cdot \vec{x1}= 0 $, and $\vec{x1} = [x - pp_0 ,y - pp_1 ,z - pp_2]$. so we get the function:
-$$ n_0 * (x - pp_0) + n_1 * (y - pp_1) + n_2 * (z - pp_2) = 0 $$ 
-and with the function of light and plane we can get:
-$$t = \frac{n_0*(pp_0-pl_0)+n_1*(pp_1-pl1)+n_3*(pp_2-pl_2)}{n_0*v_0+n_1*v_1+n_2*v_2} $$
-then we can get the cross point $P$.
-#### Fun(CaTdir)
-we have the function for calculate the refracted light:
-$$\vec{t} = \vec{n} \times \vec{a}\times \vec{n}\cdot n_1/ n_2 + \sqrt{ \left | \vec{a}\right |^{2} - \left | \vec{n}  \times \vec{a}\times \vec{n}\right |^{2} } \cdot \vec{n} $$
-and the vector n should be meet the following conditions:$  \vec{a} \cdot  \vec{n} >0 $
- 
  
 #### Special cases:
 (1) the incident light is parallel to the plane
@@ -107,6 +86,7 @@ and the vector n should be meet the following conditions:$  \vec{a} \cdot  \vec{
 | Incident light| [1,2,-3]  | [2,1,2]   |
 | Plane         | [0,0,0]   | [-1,4,-1] |
 | n1 ; n2       |    1      |     1     |
+
 ![avatar](/Figure/Case_1.png)
 
 (2) the direction vector of light is vertical to the plane
@@ -116,11 +96,12 @@ and the vector n should be meet the following conditions:$  \vec{a} \cdot  \vec{
 | Incident light| [1,2,-3]  | [2,1,2]   |
 | Plane         | [0,0,0]   | [2,1,2]   |
 | n1 ; n2       |    1      |     1     |
+
 ![avatar](/Figure/Case_2.png)
 
 //(3) the starting point of light is on the plane
 ### 5.Calculate the reflection light
-> formular and fig
+
 #### Special cases:
 
 Total reflection (Case 8)
@@ -129,7 +110,8 @@ Total reflection (Case 8)
 | Incident light| [1,2,-3]  | [2,1,4]   |
 | Plane         | [0,0,0]   | [2,4,3]   |
 | n1 ; n2       |    9      |     1     |
-![avatar](/light123/Figure/Case_8.png)
+
+![avatar](/Figure/Case_8.png)
 
 ### 6.Calculate the transmitted light
 > formular and fig
@@ -169,6 +151,8 @@ Because there have set many python file, and the functions many seems not too cl
 
 
 ## The Equation (Latex)
+
+![avatar](README_The_Equation1.png)
 
 ### Fun(CaRDir)
 If the incident light is **vertical or nearly vertical** to the plane, we take $\vec{r} = -\vec{i}$
