@@ -107,7 +107,7 @@ and the vector n should be meet the following conditions:$  \vec{a} \cdot  \vec{
 | Incident light| [1,2,-3]  | [2,1,2]   |
 | Plane         | [0,0,0]   | [-1,4,-1] |
 | n1 ; n2       |    1      |     1     |
-![avatar](/light123/Figure/Case_1.png)
+![avatar](/Figure/Case_1.png)
 
 (2) the direction vector of light is vertical to the plane
 
@@ -116,7 +116,7 @@ and the vector n should be meet the following conditions:$  \vec{a} \cdot  \vec{
 | Incident light| [1,2,-3]  | [2,1,2]   |
 | Plane         | [0,0,0]   | [2,1,2]   |
 | n1 ; n2       |    1      |     1     |
-![avatar](/light123/Figure/Case_2.png)
+![avatar](/Figure/Case_2.png)
 
 //(3) the starting point of light is on the plane
 ### 5.Calculate the reflection light
