@@ -20,14 +20,19 @@ if __name__ == '__main__':
     t = Fun.Light()# t is refractedlight(transmitted light)
     n1 = 1
     n2 = 1
-   
+
+    # if we will autotest or take the case we handly set
     Autotest = False
+    # the results of the autotest ---> WriteN
     WriteN = False
+    # WriteN --> and then we write in the AutotestOutput.txt
     f = open("AutotestOutput.txt", 'w+')
 
 
+# sssd is just for circulation to the gauss random number check 
 #    sssd = 1
-#'take a fouces'
+
+#'take a fouces here '
 #while sssd < 100: 
 #    sssd +=1
 
@@ -42,16 +47,21 @@ if __name__ == '__main__':
     #''
     if Fun.JudgeCrossPoint(a,b):
 
+        # calculate the reflected light and print the point and vector
         r.inc(Fun.CaPoint(a,b),Fun.CaRDir(a,b))
         print('The point and direction of the reflected light is:')
         r.displayLight()
 
         #'first judge if the total reflection will happen, Ture is not happen, and False is happen'
         if Fun.JudgeTotalReflection(a,b,n1,n2):
+
+            # calculate the transmitted light and print the point and vector
             t.inc(Fun.CaPoint(a,b),Fun.CaTdir(a,b,n1,n2))
             print('The point and direction of the transmitted(refractedlight) light is:')
             t.displayLight()
-
+            
+            # if we will test or not, 
+            # and we assume you dont want to see the figure, 100 figure is troublesome
             if Autotest == True:
                 WriteN = TIS.AutoCheckTest(a,b,r,t,n1,n2)
                 if WriteN:
@@ -70,9 +80,10 @@ if __name__ == '__main__':
             if Autotest == True:
                 WriteN = TIS.AutoCheckTest(a,b,r,t,n1,n2)
                 if WriteN:
-                    print('ok,total reflection',file= f)
+                    print('ok, but can not judge wrong or correct, becaouse total reflection',file= f)
                 else:
-                    print('total reflection',file= f)
+                    # it always be give wrong if Total reflection occor.
+                    print('can not judge wrong or correct, because total reflection',file= f)
             else:
                 # Display the picture of the lights and plane
                 DisWP.DisplayWholeProcess(a,r,t,b)

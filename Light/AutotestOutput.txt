@@ -1,31 +1,28 @@
 ok
-total reflection
 ok
-total reflection
 ok
-total reflection
 ok
+can not judge wrong or correct, because total reflection
 ok
-total reflection
 ok
-total reflection
 ok
+can not judge wrong or correct, because total reflection
 ok
 ok
 ok
 ok
 ok
-total reflection
+can not judge wrong or correct, because total reflection
 ok
+can not judge wrong or correct, because total reflection
 ok
 ok
-total reflection
 ok
 ok
 ok
-total reflection
 ok
 ok
+can not judge wrong or correct, because total reflection
 ok
 ok
 ok
@@ -33,10 +30,8 @@ ok
 ok
 ok
 ok
-total reflection
 ok
 ok
-total reflection
 ok
 ok
 ok
@@ -44,46 +39,48 @@ ok
 ok
 ok
 ok
+can not judge wrong or correct, because total reflection
 ok
-total reflection
 ok
 ok
 ok
+can not judge wrong or correct, because total reflection
 ok
-total reflection
-total reflection
 ok
-total reflection
 ok
 ok
 ok
+can not judge wrong or correct, because total reflection
 ok
+can not judge wrong or correct, because total reflection
 ok
 ok
-total reflection
 ok
+can not judge wrong or correct, because total reflection
 ok
 ok
 ok
 ok
-total reflection
-total reflection
 ok
 ok
 ok
 ok
+can not judge wrong or correct, because total reflection
 ok
+can not judge wrong or correct, because total reflection
 ok
-total reflection
 ok
 ok
 ok
 ok
+can not judge wrong or correct, because total reflection
 ok
+can not judge wrong or correct, because total reflection
 ok
 ok
 ok
 ok
+can not judge wrong or correct, because total reflection
 ok
 ok
 ok
@@ -92,8 +89,11 @@ ok
 ok
 ok
 ok
-total reflection
 ok
 ok
 ok
-total reflection
+ok
+ok
+ok
+ok
+ok
