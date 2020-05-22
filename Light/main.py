@@ -21,15 +21,15 @@ if __name__ == '__main__':
     n1 = 1
     n2 = 1
    
-    Autotest = True
+    Autotest = False
     WriteN = False
     f = open("AutotestOutput.txt", 'w+')
 
 
-    sssd = 1
+#    sssd = 1
 #'take a fouces'
-while sssd < 100: 
-    sssd +=1
+#while sssd < 100: 
+#    sssd +=1
 
 
     #'here we input the situation'   
@@ -37,7 +37,7 @@ while sssd < 100:
         (a,b,n1,n2) = TIS.RandomLightInput()
     else:
         #'use the Test Case we set by hand'
-        (a,b,n1,n2) = TS.InputLightPlane7()
+        (a,b,n1,n2) = TS.InputLightPlane13()
 
     #''
     if Fun.JudgeCrossPoint(a,b):
