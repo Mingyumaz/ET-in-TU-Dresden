@@ -8,7 +8,7 @@ In most cases of physics, when light hits a boundry of two light-transmittble me
 
 ## Illustration of light transmission
 
-![avatar](/Figure/Case_7.png)
+![avatar](/Figure/geogebra-export.png)
 
 > (illustration of light transmission)fig1.1 (comment of all the angles and medium Index)
 
