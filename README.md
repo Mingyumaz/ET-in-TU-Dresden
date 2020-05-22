@@ -1,3 +1,3 @@
-# A tiny script for Raytracing
+# Hauptseminar_RayTracing
 
-Here is a tiny python script to calculate reflected light and refracted light from incident light.
+(further working progress after the experiment on python)
