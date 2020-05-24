@@ -80,10 +80,10 @@ if __name__ == '__main__':
             if Autotest == True:
                 WriteN = TIS.AutoCheckTest(a,b,r,t,n1,n2)
                 if WriteN:
-                    print('ok, but can not judge wrong or correct, becaouse total reflection',file= f)
+                    print('ok, but can not judge wrong or correct, because already total reflection',file= f)
                 else:
                     # it always be give wrong if Total reflection occor.
-                    print('can not judge wrong or correct, because total reflection',file= f)
+                    print('can not judge wrong or correct, because already total reflection',file= f)
             else:
                 # Display the picture of the lights and plane
                 DisWP.DisplayWholeProcess(a,r,t,b)
