@@ -8,9 +8,9 @@ In most cases of physics, when light hits a boundry of two light-transmittble me
 
 ## Illustration of light transmission
 
-![avatar](/Figure/geogebra-export.png)
+> ![avatar](/Figure/geogebra-export.png) fig1.1
 
-> (illustration of light transmission)fig1.1 (comment of all the angles and medium Index)
+
 
 ### The Law of reflection
 As shown in the fig1.1. The angle of reflection is the same as the angle of incident light.
