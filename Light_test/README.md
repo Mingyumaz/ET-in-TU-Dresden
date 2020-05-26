@@ -1,5 +1,8 @@
-In this, we have use pytest as a method to test the programm. 
-(Because I don't konw the pytest before. Really thanks for the teacher)
-Because the Pytest more clearly and more Normalize. I decide to use the Pytest.
-For today, I only take a little cases.
-we also delete the main.py and the testprogramm we write by ourself. 
+### Test Cases
+pytest is being used to run the test cases 
+
+Comparing to set the test value one by one, using pytest is more compact and clear.
+
+The newest version only contains several cases.
+
+main.py is not included in this folder. 
