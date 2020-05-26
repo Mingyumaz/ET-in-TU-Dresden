@@ -79,7 +79,7 @@ class Plane(object):
 
  
 #### Special cases:
-(1) the incident light is parallel to the plane
+(1) the incident light is parallel to the plane:(case1)
 
 | Item      |    point  | vector  |
 | :-------- | --------: | :--:    |
@@ -89,7 +89,7 @@ class Plane(object):
 
 ![avatar](/Figure/Case_1.png)
 
-(2) the direction vector of light is vertical to the plane
+(2) the direction vector of light is vertical to the plane:(case 2)
 
 | Item      |    point  | vector  |
 | :-------- | --------: | :--:    |
