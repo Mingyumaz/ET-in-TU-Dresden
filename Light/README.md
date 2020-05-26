@@ -116,11 +116,11 @@ Total reflection (Case 8)
 ### 6.Calculate the transmitted light
 > formular and fig
 
-(1) the incident angle is zero(vertical)
-> fig and illu.
+(1) the incident angle is zero(vertical) (case 4)
+> ![avatar](/Figure/Case_4.png).
 
-(2) the incident angle is close to zero
-> fig and illu.
+(2) the incident angle is close to zero (case 11)
+> ![avatar](/Figure/Case_11.png)
 
 
 
